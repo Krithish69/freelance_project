@@ -1,26 +1,20 @@
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import About from "./components/About";
-import Offerings from "./components/Offerings";
-import Features from "./components/Features";
-import Pricing from "./components/Pricing";
-import AIBids from "./components/AIBids";
-import Reviews from "./components/Reviews";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import React from 'react';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import Features from './components/Features'; // Renaming About to Features for clarity
+import Pricing from './components/Pricing';
+import Footer from './components/Footer';
+import './index.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      <HeroSection />
-      <About />
-      <Offerings />
-      <Features />
-      <Pricing />
-      <AIBids />
-      <Reviews />
-      <Contact />
+      <main>
+        <HeroSection />
+        <Features />
+        <Pricing />
+      </main>
       <Footer />
     </div>
   );
