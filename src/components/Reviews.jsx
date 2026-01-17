@@ -1,2 +1,2 @@
-function Reviews() {}
+function Reviews() { }
 export default Reviews;
